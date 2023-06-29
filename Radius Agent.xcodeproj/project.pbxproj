@@ -9,21 +9,36 @@
 /* Begin PBXBuildFile section */
 		414856432A4D3ED70012E50C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414856422A4D3ED70012E50C /* AppDelegate.swift */; };
 		414856452A4D3ED70012E50C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414856442A4D3ED70012E50C /* SceneDelegate.swift */; };
-		414856472A4D3ED70012E50C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414856462A4D3ED70012E50C /* ViewController.swift */; };
+		414856472A4D3ED70012E50C /* FacilitySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414856462A4D3ED70012E50C /* FacilitySelectionViewController.swift */; };
 		4148564A2A4D3ED70012E50C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 414856482A4D3ED70012E50C /* Main.storyboard */; };
 		4148564C2A4D3ED80012E50C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4148564B2A4D3ED80012E50C /* Assets.xcassets */; };
 		4148564F2A4D3ED80012E50C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4148564D2A4D3ED80012E50C /* LaunchScreen.storyboard */; };
+		414856582A4D3F950012E50C /* AssignmentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414856572A4D3F950012E50C /* AssignmentResponse.swift */; };
+		4148565B2A4D401D0012E50C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4148565A2A4D401D0012E50C /* Alamofire */; };
+		4148565F2A4D407F0012E50C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148565E2A4D407F0012E50C /* Router.swift */; };
+		414856612A4D43CA0012E50C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414856602A4D43CA0012E50C /* NetworkManager.swift */; };
+		414856652A4D47AC0012E50C /* FacilitySelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414856642A4D47AC0012E50C /* FacilitySelectionViewModel.swift */; };
+		414856682A4D4A180012E50C /* AlertDisplaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414856672A4D4A180012E50C /* AlertDisplaying.swift */; };
+		4148566B2A4D79EE0012E50C /* TitleSubtitleExpandableCardHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148566A2A4D79EE0012E50C /* TitleSubtitleExpandableCardHeader.swift */; };
+		417968832A4D7E7100BC6EDA /* TitleSubtitleExpandableCardHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417968822A4D7E7100BC6EDA /* TitleSubtitleExpandableCardHeader.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4148563F2A4D3ED70012E50C /* Radius Agent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Radius Agent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		414856422A4D3ED70012E50C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		414856442A4D3ED70012E50C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		414856462A4D3ED70012E50C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		414856462A4D3ED70012E50C /* FacilitySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitySelectionViewController.swift; sourceTree = "<group>"; };
 		414856492A4D3ED70012E50C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4148564B2A4D3ED80012E50C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4148564E2A4D3ED80012E50C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		414856502A4D3ED80012E50C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		414856572A4D3F950012E50C /* AssignmentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentResponse.swift; sourceTree = "<group>"; };
+		4148565E2A4D407F0012E50C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		414856602A4D43CA0012E50C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		414856642A4D47AC0012E50C /* FacilitySelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitySelectionViewModel.swift; sourceTree = "<group>"; };
+		414856672A4D4A180012E50C /* AlertDisplaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDisplaying.swift; sourceTree = "<group>"; };
+		4148566A2A4D79EE0012E50C /* TitleSubtitleExpandableCardHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleExpandableCardHeader.swift; sourceTree = "<group>"; };
+		417968822A4D7E7100BC6EDA /* TitleSubtitleExpandableCardHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleSubtitleExpandableCardHeader.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4148565B2A4D401D0012E50C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +72,78 @@
 		414856412A4D3ED70012E50C /* Radius Agent */ = {
 			isa = PBXGroup;
 			children = (
+				414856662A4D49DA0012E50C /* Protocol */,
+				4148565C2A4D40560012E50C /* Service */,
+				414856562A4D3F7D0012E50C /* Model */,
 				414856422A4D3ED70012E50C /* AppDelegate.swift */,
 				414856442A4D3ED70012E50C /* SceneDelegate.swift */,
-				414856462A4D3ED70012E50C /* ViewController.swift */,
+				414856622A4D47920012E50C /* Controller */,
 				414856482A4D3ED70012E50C /* Main.storyboard */,
 				4148564B2A4D3ED80012E50C /* Assets.xcassets */,
 				4148564D2A4D3ED80012E50C /* LaunchScreen.storyboard */,
 				414856502A4D3ED80012E50C /* Info.plist */,
 			);
 			path = "Radius Agent";
+			sourceTree = "<group>";
+		};
+		414856562A4D3F7D0012E50C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				414856572A4D3F950012E50C /* AssignmentResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4148565C2A4D40560012E50C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4148565D2A4D40740012E50C /* Network */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4148565D2A4D40740012E50C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4148565E2A4D407F0012E50C /* Router.swift */,
+				414856602A4D43CA0012E50C /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		414856622A4D47920012E50C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				414856692A4D79B60012E50C /* Header */,
+				414856632A4D479C0012E50C /* FacilitySelection */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		414856632A4D479C0012E50C /* FacilitySelection */ = {
+			isa = PBXGroup;
+			children = (
+				414856462A4D3ED70012E50C /* FacilitySelectionViewController.swift */,
+				414856642A4D47AC0012E50C /* FacilitySelectionViewModel.swift */,
+			);
+			path = FacilitySelection;
+			sourceTree = "<group>";
+		};
+		414856662A4D49DA0012E50C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				414856672A4D4A180012E50C /* AlertDisplaying.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		414856692A4D79B60012E50C /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				4148566A2A4D79EE0012E50C /* TitleSubtitleExpandableCardHeader.swift */,
+				417968822A4D7E7100BC6EDA /* TitleSubtitleExpandableCardHeader.xib */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +162,9 @@
 			dependencies = (
 			);
 			name = "Radius Agent";
+			packageProductDependencies = (
+				4148565A2A4D401D0012E50C /* Alamofire */,
+			);
 			productName = "Radius Agent";
 			productReference = 4148563F2A4D3ED70012E50C /* Radius Agent.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +193,9 @@
 				Base,
 			);
 			mainGroup = 414856362A4D3ED70012E50C;
+			packageReferences = (
+				414856592A4D401D0012E50C /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 414856402A4D3ED70012E50C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +213,7 @@
 				4148564F2A4D3ED80012E50C /* LaunchScreen.storyboard in Resources */,
 				4148564C2A4D3ED80012E50C /* Assets.xcassets in Resources */,
 				4148564A2A4D3ED70012E50C /* Main.storyboard in Resources */,
+				417968832A4D7E7100BC6EDA /* TitleSubtitleExpandableCardHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +224,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				414856472A4D3ED70012E50C /* ViewController.swift in Sources */,
+				414856652A4D47AC0012E50C /* FacilitySelectionViewModel.swift in Sources */,
+				4148566B2A4D79EE0012E50C /* TitleSubtitleExpandableCardHeader.swift in Sources */,
+				414856612A4D43CA0012E50C /* NetworkManager.swift in Sources */,
+				414856472A4D3ED70012E50C /* FacilitySelectionViewController.swift in Sources */,
 				414856432A4D3ED70012E50C /* AppDelegate.swift in Sources */,
+				414856682A4D4A180012E50C /* AlertDisplaying.swift in Sources */,
+				4148565F2A4D407F0012E50C /* Router.swift in Sources */,
 				414856452A4D3ED70012E50C /* SceneDelegate.swift in Sources */,
+				414856582A4D3F950012E50C /* AssignmentResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -295,6 +387,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +416,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +452,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		414856592A4D401D0012E50C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4148565A2A4D401D0012E50C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 414856592A4D401D0012E50C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 414856372A4D3ED70012E50C /* Project object */;
 }
