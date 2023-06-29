@@ -13,6 +13,18 @@ struct AssignmentResponseModel: Codable {
     let exclusions: [[Exclusion]]
 }
 
+extension Array where Element == [Exclusion] {
+    func exclusion(withFacility facility: Facility, andOption option: Option) -> [Exclusion]? {
+        for var exclusion in self {
+            if let index = exclusion.firstIndex(where: {$0.facilityID == facility.facilityID && $0.optionsID == option.id}) {
+                exclusion.remove(at: index)
+                return exclusion
+            }
+        }
+        return nil
+    }
+}
+
 // MARK: - Exclusion
 struct Exclusion: Codable {
     let facilityID, optionsID: String

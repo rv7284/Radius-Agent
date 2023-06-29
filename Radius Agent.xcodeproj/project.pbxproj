@@ -19,8 +19,6 @@
 		414856612A4D43CA0012E50C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414856602A4D43CA0012E50C /* NetworkManager.swift */; };
 		414856652A4D47AC0012E50C /* FacilitySelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414856642A4D47AC0012E50C /* FacilitySelectionViewModel.swift */; };
 		414856682A4D4A180012E50C /* AlertDisplaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414856672A4D4A180012E50C /* AlertDisplaying.swift */; };
-		4148566B2A4D79EE0012E50C /* TitleSubtitleExpandableCardHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148566A2A4D79EE0012E50C /* TitleSubtitleExpandableCardHeader.swift */; };
-		417968832A4D7E7100BC6EDA /* TitleSubtitleExpandableCardHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 417968822A4D7E7100BC6EDA /* TitleSubtitleExpandableCardHeader.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +35,6 @@
 		414856602A4D43CA0012E50C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		414856642A4D47AC0012E50C /* FacilitySelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitySelectionViewModel.swift; sourceTree = "<group>"; };
 		414856672A4D4A180012E50C /* AlertDisplaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDisplaying.swift; sourceTree = "<group>"; };
-		4148566A2A4D79EE0012E50C /* TitleSubtitleExpandableCardHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleExpandableCardHeader.swift; sourceTree = "<group>"; };
-		417968822A4D7E7100BC6EDA /* TitleSubtitleExpandableCardHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleSubtitleExpandableCardHeader.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +110,6 @@
 		414856622A4D47920012E50C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				414856692A4D79B60012E50C /* Header */,
 				414856632A4D479C0012E50C /* FacilitySelection */,
 			);
 			path = Controller;
@@ -135,15 +130,6 @@
 				414856672A4D4A180012E50C /* AlertDisplaying.swift */,
 			);
 			path = Protocol;
-			sourceTree = "<group>";
-		};
-		414856692A4D79B60012E50C /* Header */ = {
-			isa = PBXGroup;
-			children = (
-				4148566A2A4D79EE0012E50C /* TitleSubtitleExpandableCardHeader.swift */,
-				417968822A4D7E7100BC6EDA /* TitleSubtitleExpandableCardHeader.xib */,
-			);
-			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +199,6 @@
 				4148564F2A4D3ED80012E50C /* LaunchScreen.storyboard in Resources */,
 				4148564C2A4D3ED80012E50C /* Assets.xcassets in Resources */,
 				4148564A2A4D3ED70012E50C /* Main.storyboard in Resources */,
-				417968832A4D7E7100BC6EDA /* TitleSubtitleExpandableCardHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +210,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				414856652A4D47AC0012E50C /* FacilitySelectionViewModel.swift in Sources */,
-				4148566B2A4D79EE0012E50C /* TitleSubtitleExpandableCardHeader.swift in Sources */,
 				414856612A4D43CA0012E50C /* NetworkManager.swift in Sources */,
 				414856472A4D3ED70012E50C /* FacilitySelectionViewController.swift in Sources */,
 				414856432A4D3ED70012E50C /* AppDelegate.swift in Sources */,

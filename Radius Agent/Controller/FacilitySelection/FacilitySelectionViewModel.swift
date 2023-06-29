@@ -9,6 +9,17 @@ import Foundation
 import Combine
 
 extension FacilitySelectionViewController {
+    enum AppError: Error, LocalizedError {
+        case exclusion(option: Option, currentSelection: String)
+        
+        var errorDescription: String? {
+            switch self {
+            case .exclusion(let option, let currentSelection):
+                return "You can not select \(option.name) with \(currentSelection)."
+            }
+        }
+    }
+    
     class FacilitySelectionViewModel {
         
         @Published var facilitiesAndExclusions: AssignmentResponseModel?
@@ -28,10 +39,32 @@ extension FacilitySelectionViewController {
             }
         }
         
-        func selectOption(atIndexPath indexPath: IndexPath) {
-            guard let facilities = self.facilitiesAndExclusions?.facilities else { return }
+        func selectOption(atIndexPath indexPath: IndexPath) -> Bool {
+            guard let facilities = self.facilitiesAndExclusions?.facilities, let appExclusions = self.facilitiesAndExclusions?.exclusions else { return false }
             let facility = facilities[indexPath.section]
-            facilitiesSelection[facility.facilityID] = facility.options[indexPath.row]
+            let option = facility.options[indexPath.row]
+            if let exclusions = appExclusions.exclusion(withFacility: facility, andOption: option) {
+                //This will handle cases where more than 2 conditions are needed in exclusion
+                var matchedCases = 0
+                var currentSelection = ""
+                for exclusion in exclusions {
+                    if let option = facilitiesSelection[exclusion.facilityID], option.id == exclusion.optionsID {
+                        if currentSelection.isEmpty {
+                            currentSelection = option.name
+                        } else {
+                            currentSelection += (", " + option.name)
+                        }
+                        matchedCases += 1
+                    }
+                }
+
+                if matchedCases == exclusions.count {
+                    errorHanding.send(AppError.exclusion(option: option, currentSelection: currentSelection))
+                    return false
+                }
+            }
+            facilitiesSelection[facility.facilityID] = option
+            return true
         }
     }
 }

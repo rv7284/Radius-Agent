@@ -21,6 +21,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="4n4-Sy-zOa">
+                                <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -28,11 +32,14 @@
                             <constraint firstItem="w5v-71-PEt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0VP-Id-04s"/>
                             <constraint firstItem="w5v-71-PEt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6U4-CX-Ypa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w5v-71-PEt" secondAttribute="trailing" id="Afo-YG-62q"/>
+                            <constraint firstItem="4n4-Sy-zOa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="D2C-p4-DoT"/>
                             <constraint firstAttribute="bottom" secondItem="w5v-71-PEt" secondAttribute="bottom" id="Rrf-xl-kI3"/>
+                            <constraint firstItem="4n4-Sy-zOa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UbT-0R-21n"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SNC-aK-oYf"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="4n4-Sy-zOa" id="OrD-HI-v9c"/>
                         <outlet property="tableView" destination="w5v-71-PEt" id="QHK-sW-IuO"/>
                     </connections>
                 </viewController>
